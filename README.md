@@ -22,3 +22,7 @@ Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o
 
 
 Divirta-se
+
+Solução: foi utilizada a técnica de build em múltiplos estágios, para, após o build com a imagem GO, gravar o executável em uma imagem tipo "scratch", minimizando assim seu tamanho para abaixo de 2 MB!
+
+A imagem resultante está disponível no Docker Hub (heltonharada/codeeducation)
