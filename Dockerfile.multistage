@@ -1,0 +1,15 @@
+FROM golang:1.17 AS multistage
+
+WORKDIR /go/src/
+
+COPY main.go .
+
+RUN go build main.go
+
+##
+
+FROM scratch
+
+COPY --from=multistage /go/src/main /
+
+CMD  ["./main"]
