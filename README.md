@@ -8,7 +8,7 @@ Esse desafio é muito empolgante principalmente se você nunca trabalhou com a l
 
 Você terá que publicar uma imagem no docker hub. Quando executarmos:
 
-  - docker run <seu-user>/codeeducation
+  - docker run heltonharada/codeeducation
 
 Temos que ter o seguinte resultado:
   
